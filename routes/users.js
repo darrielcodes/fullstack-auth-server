@@ -130,6 +130,7 @@ router.get('/message', (req, res) => {
       });
     }
 
+    throw Error("Access Denied");
   } catch (err) {
     console.error(err);
     res.json({
